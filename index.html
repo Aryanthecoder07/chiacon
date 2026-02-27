@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiacon AI | Enterprise Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav >
+        <div class="container">
+            <h1 class="logo">Chiacon<span>AI</span></h1>
+        </div>
+       
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h2>Nourishing Businesses with Intelligent IT Solutions</h2>
+            <p>Chiacon is an emerging IT Services and IT Consulting startup dedicated to helping businesses thrive in the digital era. With a focus on Analytics, RPA, QA, and Project Catalysts, Chiacon offers a wide range of services to help organizations of all sizes leverage the latest technologies and stay ahead of the competition.<br>The name Chiacon is a clever combination of "Chia" from the nutrient-rich chia seeds and "Con" from Consulting, signifying the company's commitment to providing holistic solutions that nourish businesses.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="grid">
+            <div class="card">
+                <div class="icon">🤖</div>
+                <h4>RPA Automation</h4>
+                <p>Reducing manual entry by 80% to streamline business workflows.</p>
+            </div>
+            <div class="card">
+                <div class="icon">📊</div>
+                <h4>Data Analytics</h4>
+                <p>Turning raw data into actionable insights for the C-suite.</p>
+            </div>
+            <div class="card">
+                <div class="icon">✅</div>
+                <h4>AI-Powered QA</h4>
+                <p>Modern testing cycles ensuring zero-defect software deployments.</p>
+            </div>
+        </section>
+
+        <section class="demo-card">
+            <h3>AI Outreach Generator</h3>
+            <p>Generate a professional pitch for Chiacon's services in seconds.</p>
+            
+            <div class="form-grid">
+                <div class="input-field">
+                    <label>Target Company</label>
+                    <input type="text" id="company" placeholder="e.g. Acme Corp">
+                </div>
+                <div class="input-field">
+                    <label>Industry</label>
+                    <input type="text" id="industry" placeholder="e.g. Healthcare">
+                </div>
+                <div class="input-field">
+                    <label>Recipient Role</label>
+                    <select id="role">
+                        <option value="CFO">CFO (Focus on ROI)</option>
+                        <option value="CTO">CTO (Focus on Tech)</option>
+                        <option value="COO">COO (Focus on Operations)</option>
+                    </select>
+                </div>
+                <button onclick="generateEmail()" id="genBtn">Draft Email</button>
+            </div>
+
+            <div id="loader" class="loader hidden">Consulting AI...</div>
+
+            <div id="output" class="email-box hidden">
+                <div class="email-header">Subject: Strategy for Potential Growth</div>
+                <div id="emailBody" class="email-body"></div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="config.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

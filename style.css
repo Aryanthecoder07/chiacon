@@ -1,0 +1,159 @@
+:root {
+    --primary: #002147;    /* Deep Navy */
+    --accent: #007bff;     /* Chiacon Blue */
+    --accent-hover: #0056b3;
+    --bg: #f9f9fb1d;
+    --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    --hover-shadow: 0 12px 30px rgba(0, 33, 71, 0.15);
+}
+
+/* Global Reset & Typography */
+body { 
+    font-family: 'Inter', sans-serif; 
+    margin: 0; 
+    background: var(--bg); 
+    color: #333; 
+    line-height: 1.6; 
+    -webkit-font-smoothing: antialiased;
+}
+
+.container { width: 90%; max-width: 1000px; margin: auto; }
+
+/* Navigation */
+nav { 
+    background: white; 
+    padding: 1rem 0; 
+    border-bottom: 1px solid #eee; 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo { font-size: 1.5rem; color: var(--primary); font-weight: 700; margin: 0; }
+.logo span { color: var(--accent); }
+
+/* Hero Section */
+.hero { background: var(--primary); color: white; padding: 5rem 0; text-align: center; }
+.hero h2 { font-size: 2.5rem; font-weight: 700; margin-bottom: 1.5rem; }
+.hero p { max-width: 800px; margin: 0 auto; opacity: 0.9; font-size: 1.1rem; }
+
+/* Expertise Grid & Cards */
+.grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 1.5rem; 
+    margin-top: 3rem; 
+}
+
+.card { 
+    background: white; 
+    padding: 2.5rem 2rem; 
+    border-radius: 12px; 
+    border: 1px solid #eee; 
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    cursor: default;
+}
+
+/* Interactive Hover Effect for Cards */
+.card:hover { 
+    transform: translateY(-8px);
+    box-shadow: var(--hover-shadow);
+    border-color: var(--accent);
+}
+
+.icon { font-size: 2.5rem; margin-bottom: 15px; display: block; }
+.card h4 { margin: 10px 0; color: var(--primary); font-size: 1.25rem; }
+
+/* Demo Section */
+.demo-card { 
+    background: white; 
+    padding: 3.5rem; 
+    border-radius: 15px; 
+    margin: 50px 0; 
+    box-shadow: var(--card-shadow); 
+}
+
+.form-grid { display: flex; flex-wrap: wrap; gap: 1.25rem; margin-top: 25px; }
+.input-field { display: flex; flex-direction: column; flex: 1; min-width: 200px; }
+.input-field label { font-size: 0.85rem; font-weight: 700; margin-bottom: 8px; color: var(--primary); }
+
+/* Input Styles & Focus Ring */
+input, select { 
+    padding: 14px; 
+    border-radius: 8px; 
+    border: 1px solid #ccc; 
+    font-size: 1rem; 
+    transition: all 0.2s ease;
+    background-color: #fff;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.15); /* Professional Focus Ring */
+}
+
+/* Button & Hover State */
+button { 
+    background: var(--accent); 
+    color: white; 
+    border: none; 
+    font-weight: 700; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    width: 100%; 
+    padding: 14px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+button:hover { 
+    background: var(--accent-hover); 
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+    transform: translateY(-1px);
+}
+
+button:active { transform: translateY(0); }
+
+/* AI Output Window */
+.email-box { 
+    margin-top: 40px; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    animation: fadeIn 0.5s ease;
+}
+
+.email-header { 
+    background: #f1f3f4; 
+    padding: 12px 25px; 
+    font-weight: 600; 
+    font-size: 0.85rem; 
+    border-bottom: 1px solid #ddd;
+    color: #5f6368;
+}
+
+.email-body { 
+    padding: 30px; 
+    white-space: pre-line; 
+    background: white; 
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Utilities */
+.hidden { display: none; }
+.loader { text-align: center; margin-top: 25px; font-weight: 700; color: var(--accent); }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+footer { 
+    text-align: center; 
+    padding: 4rem 0; 
+    font-size: 0.85rem; 
+    color: #888; 
+    border-top: 1px solid #eee;
+    margin-top: 2rem;
+}
