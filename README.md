@@ -1,6 +1,6 @@
 # Chiacon AI Webpage Prototype
 
-A professional, interactive web prototype showcasing Chiacon’s AI capabilities. This project features a live AI-powered Outreach Email Generator built using the Google Gemini 1.5 Flash API.
+A professional, interactive web prototype showcasing Chiacon’s AI capabilities. This project features a live AI-powered Outreach Email Generator built using the Google Gemini 2.5 Flash API.
 
 ## 🚀 Live Demo
 https://chiacon.vercel.app/
