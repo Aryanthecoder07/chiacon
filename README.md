@@ -3,7 +3,7 @@
 A professional, interactive web prototype showcasing Chiacon’s AI capabilities. This project features a live AI-powered Outreach Email Generator built using the Google Gemini 1.5 Flash API.
 
 ## 🚀 Live Demo
-[Insert your GitHub Pages/Vercel Link Here]
+https://chiacon.vercel.app/
 
 ## 🛠️ Tech Stack
 - **Frontend:** HTML5, CSS3 (Modern Flexbox & Grid)
